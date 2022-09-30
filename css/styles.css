@@ -31,6 +31,7 @@ h1,h2,h3,h4,h5,h6,p{
     --letters-color: #fff;
     --logo-color: #000;
     --footer-links-color: rgba(255, 255, 255, 0.6);
+    --border-form-color: rgba(255, 255, 255, 0.3);
     --hero-bg-color: #2F303A;  
     --footer-bg-color: #2F303A;
     --hero-button-color: #188CEB;
@@ -532,8 +533,11 @@ address .item:not(:first-child){
 
 .footer-box{
     display: flex;
-    gap: 70px;
     align-items: baseline;
+}
+
+.footer-part{
+    margin-right: 70px;
 }
 
 .socialmedia-list-footer{
@@ -567,6 +571,71 @@ address .item:not(:first-child){
     text-transform: uppercase;
     color: var(--letters-color);
     margin-bottom: 20px;
+}
+
+.form-footer{
+    display: flex;
+}
+
+.footer-sign{
+    margin-left: 93px;
+}
+
+.footer-label{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--letters-color);
+    margin-bottom: 20px;
+}
+
+.mail-wrap{
+    width: 358px;
+    height: 50px;
+    border: 1px solid var(--border-form-color);
+    outline: none;
+    border-radius: 4px;
+    background-color: var(--footer-bg-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    color: var(--footer-links-color);
+    transition: border 250ms var(--time-function);
+}
+
+.mail-wrap:focus{
+    border: 1px solid var(--letters-color);
+}
+
+.sign-button{
+    margin-left: 12px;
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    border: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: var(--letters-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 250ms var(--time-function);
+}
+
+.sign-button:hover,.sign-button:focus{
+    background-color: var(--hero-button-color);
 }
 
 /* Modal */
