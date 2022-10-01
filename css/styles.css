@@ -713,6 +713,11 @@ address .item:not(:first-child){
     border-color: var(--accent-color);
 }
 
+.icon-input{
+    fill: currentColor;
+    pointer-events: none;
+}
+
 .info-input:focus + .icon-input{
     fill: var(--accent-color);
 }
