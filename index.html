@@ -414,34 +414,34 @@
                             <svg height="18" width="18" class="icon-input">
                                 <use href="./images/sprite.svg#icon-person"></use>
                                 </svg>
-                            <input type="text" name="name" id="name"/>
+                            <input type="text" name="name" id="name" class="info-input"/>
                         </div>
                         <label for="tel" class="modal-label">Телефон</label>
                         <div class="input-wrap">
                             <svg height="18" width="18" class="icon-input">
                                 <use href="./images/sprite.svg#icon-tel"></use>
                                 </svg>
-                            <input type="tel" name="tel" id="tel"/>
+                            <input type="tel" name="tel" id="tel" class="info-input"/>
                         </div>
                         <label for="mail" class="modal-label">Пошта</label>
                         <div class="input-wrap">
                             <svg height="18" width="18" class="icon-input">
                                 <use href="./images/sprite.svg#icon-email"></use>
                                 </svg>
-                            <input type="email" name="email" id="mail"/>
+                            <input type="email" name="email" id="mail" class="info-input"/>
                         </div>
                     <label for="comment" class="modal-label">Коментар</label>
                     <textarea name="comment" id="comment" placeholder="Введіть текст"></textarea>
                 </div>
                     <div class="checkbox-wrap">
-                        <svg height="15" width="16" class="icon-modal">
-                            <use href="./images/sprite.svg#icon-vector"></use>
-                            </svg>
-                            <svg height="15" width="16" class="icon-modal">
-                                <use href="./images/sprite.svg#icon-check"></use>
+                        <label class="policy-text">
+                            <input type="checkbox" name="policy" class="checkbox"/>
+                            <svg height="15" width="16" class="check-icon">
+                                <use class="icon-vector" href="./images/sprite.svg#icon-vector"></use>
+                                <use class="icon-check"href="./images/sprite.svg#icon-check"></use>
                                 </svg>
-                        <input type="checkbox" name="policy" id="policy" class="checkbox"/>
-                        <label for="policy" class="policy-text">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label>
+                            <span class="agreement">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></span>
+                        </label>
                     </div>
                     <button type="submit" class="form-button">Відправити</button>
                 </form>
