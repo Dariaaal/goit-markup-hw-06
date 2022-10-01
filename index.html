@@ -410,16 +410,37 @@
                 <form class="modal-form">
                     <div class="personal-info">
                         <label for="name" class="modal-label">Ім'я</label>
-                        <input type="text" name="name" id="name"/>
+                        <div class="input-wrap">
+                            <svg height="18" width="18" class="icon-input">
+                                <use href="./images/sprite.svg#icon-person"></use>
+                                </svg>
+                            <input type="text" name="name" id="name"/>
+                        </div>
                         <label for="tel" class="modal-label">Телефон</label>
-                        <input type="tel" name="tel" id="tel"/>
+                        <div class="input-wrap">
+                            <svg height="18" width="18" class="icon-input">
+                                <use href="./images/sprite.svg#icon-tel"></use>
+                                </svg>
+                            <input type="tel" name="tel" id="tel"/>
+                        </div>
                         <label for="mail" class="modal-label">Пошта</label>
-                        <input type="email" name="email" id="mail"/>
+                        <div class="input-wrap">
+                            <svg height="18" width="18" class="icon-input">
+                                <use href="./images/sprite.svg#icon-email"></use>
+                                </svg>
+                            <input type="email" name="email" id="mail"/>
+                        </div>
                     <label for="comment" class="modal-label">Коментар</label>
                     <textarea name="comment" id="comment" placeholder="Введіть текст"></textarea>
                 </div>
                     <div class="checkbox-wrap">
-                        <input type="checkbox" name="policy" id="policy"/>
+                        <svg height="15" width="16" class="icon-modal">
+                            <use href="./images/sprite.svg#icon-vector"></use>
+                            </svg>
+                            <svg height="15" width="16" class="icon-modal">
+                                <use href="./images/sprite.svg#icon-check"></use>
+                                </svg>
+                        <input type="checkbox" name="policy" id="policy" class="checkbox"/>
                         <label for="policy" class="policy-text">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label>
                     </div>
                     <button type="submit" class="form-button">Відправити</button>
